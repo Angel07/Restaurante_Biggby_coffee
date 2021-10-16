@@ -1,0 +1,68 @@
+p, td{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 35px;
+}
+
+.divCentral{
+    display: flex;
+    justify-content: center;
+}
+
+#cabecero{
+    padding: 5px;
+}
+
+#tablaExterior{
+    width: 500px;
+    overflow: hidden;
+    background-color: #c7c7c7;
+    border-collapse: collapse;
+    border-radius: 10px;
+    border: 1px solid black;
+    margin: 10px 20px;
+}
+
+#tablaBebidas{
+    width: 900px;
+    overflow: hidden;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 2px black;
+    margin: 10px 20px;
+}
+
+td img{
+    width: 10px;
+    padding: 0px 7px;
+}
+
+td{
+    padding: 10px;
+}
+.celdaLogo  {
+    resize: both;
+    width: 10px;
+    height: 10px;
+}
+
+#cabecero{
+    background-color: black;
+    color: white;
+}
+
+#logoAgregar{
+    float: right;
+    margin: 0px 10px;
+    width: 40px;
+}
+
+#logoBebida{
+    width: 35px;
+
+}
+
+#logoEditar, #logoEliminar{
+    float: right;
+    width: 35px;
+}
+

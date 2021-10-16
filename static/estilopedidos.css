@@ -1,0 +1,128 @@
+body{
+    background-image: url(img/fondobebidas.jpg);
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+}
+.maincontainer{
+    background-color: #ffffff;
+    width: 430px;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+    padding: 0px;
+    border: solid 2px;
+    border-color: black;
+    border-radius: 20px;
+}
+.headercontainer{
+    background-color: #424242;
+    width: 100%;
+    height: 12%;
+    border: solid 0px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    position:relative;
+}
+.titulologin{
+    /* background-color: red; */
+    position: absolute;
+    width: 35%;
+    height: 55%;
+    color: #f5f5f5
+    ;
+    margin-top: -1%;
+    margin-left: 2%;
+}
+.txtheaderpedido{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: large;
+}
+.divsolicitado{
+    width: 50%;
+    height: 12%;
+    /* background-color: red; */
+    margin-left: 5%;
+    margin-top: -5%;
+}
+.txtsolicitado{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: xx-large;
+    color: #303030;
+}
+.datosdepedido{
+    width:95%;
+    height: 71%;
+    /* background-color: blue; */
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.nombreproducto{
+    width: 98%;
+    height: 25%;
+    /* background-color: green; */
+    margin-top: 2%;
+}
+.datosusuario{
+    width: 98%;
+    height: 60%;
+    /* background-color: orange; */
+    margin-top: -2%;
+    margin-left: 2%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #060606;
+    font-size: x-large;
+}
+
+.divimgheaderpedido{
+    height:100%;
+    width: 26%;
+    /* background-color: red; */
+    margin-top: -28%;
+    margin-left: 50%;
+}
+.divimgproducto{
+    height: 100%;
+    width: 30%;
+    /* background-color: pink; */
+    margin-top: 6px;
+    
+}
+.divnombreproducto{
+    height: 80%;
+    width: 60%;
+    /* background-color: brown; */
+    margin-top: -23%;
+    margin-left: 35%;
+    font-size:xx-large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #303030;
+}
+.divcontactanos{
+    height: 9%;
+    width: 70%;
+    /* background-color: purple; */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #717171;
+    font-size: large;
+}
+.imgproducto{
+    height: 100%;
+    width: 90%;
+    border-radius: 40px;
+    margin-left: 10%;
+}
+.home{
+    height: 4%;
+    width: 4%;
+    margin-top: -40%;
+    margin-left: 5%;
+}
+.imghome{
+    height: 100%;
+    width: 100%;
+}

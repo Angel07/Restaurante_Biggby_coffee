@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static\estiloregistro.css">
+    <script src="static\registro.js"></script>
+    <title>Biggby Coffee</title>
+</head>
+<body>
+
+    <div class="maincontainer">
+        <div class="headercontainer">
+            <div class="titulologin"><p class="txtheaderregistrate">Registrate</p></div>
+        </div>
+        <div class="divregistrate"><p class="txtregistrate">Registrate</p></div>
+        <div class="forminicio">
+            <form name="formregistro">
+                <input type="text" placeholder="Nombre" class="inputnombre" id="nombre" required/>
+                <br>
+                <br>
+                <input type="text" placeholder="Apellido" class="inputapellido" id="apellido" required/>
+                <br>
+                <br>
+                <input type="password" placeholder="Contraseña" class="inputcontraseña" id="contraseña" onchange="return validar(this)" required/>
+                <br>
+                <br>
+                <input type="submit" name="iniciar" value="Registrate" class="btniniciodesesion" onclick="validar()"/>
+            </form>
+        </div>
+    </div>
+    
+</body>
+</html>

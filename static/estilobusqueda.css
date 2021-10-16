@@ -1,0 +1,56 @@
+/* imagenes, logos, etc */
+.logoBebidas{
+    border-radius: 100%;
+    width: 50px;
+}
+#logoLupaCabecero{
+    width: 30px;
+    
+}
+
+
+/* textos, titulos, etc */
+p, td{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 35px;
+    margin: 10px 10px;
+}
+
+#buscandoCabecero{
+    background-color: black;
+    color: white;
+}
+
+
+/* espacios entre tablas y decoracion de bordes */
+.centrar, .lista{
+    display: flex;
+    justify-content: center;
+
+}
+
+.tabla, th{
+    border-radius: 10px;
+    border-collapse: collapse;
+    margin: 10px;
+    overflow: hidden;
+    
+}
+
+td {
+    padding: 5px 40px;
+}
+
+#segundoTr{
+    background-color: #c7c7c0;
+    
+}
+
+.borde_exterior, th{
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 2px black;
+    padding: 0px 20px ;
+    margin-bottom: 30px;
+}
