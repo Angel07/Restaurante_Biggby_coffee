@@ -1,3 +1,11 @@
+body{
+    background-image: url(img/fondobebidas.jpg);
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+}
 p, td{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 35px;
@@ -19,11 +27,11 @@ p, td{
     border-collapse: collapse;
     border-radius: 10px;
     border: 1px solid black;
-    margin: 10px 20px;
+    margin: 70px 20px;
 }
 
 #tablaBebidas{
-    width: 900px;
+    width: 450px;
     overflow: hidden;
     background-color: white;
     border-radius: 10px;
@@ -67,4 +75,23 @@ td{
     float: right;
     width: 35px;
 }
-
+.home{
+    height: 4%;
+    width: 4%;
+    margin-top: 0%;
+    margin-right: 15%;
+}
+.imghome{
+    height: 100%;
+    width: 100%;
+}
+.usuarios{
+    height: 4%;
+    width: 4%;
+    margin-top: 0%;
+    margin-left: 16%;
+}
+.imgusuarios{
+    height: 100%;
+    width: 100%;
+}

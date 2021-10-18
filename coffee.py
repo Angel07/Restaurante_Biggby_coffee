@@ -51,8 +51,21 @@ def busqueda():
 def gestionbebidas():
     return render_template('gestionbebidas.html')
 
+@app.route("/miperfil")
+def miperfil():
+    return render_template('miperfil.html')
 
+@app.route("/agregarbebidas")
+def agregarbebidas():
+    return render_template('agregarbebidas.html')
 
+@app.route("/listadebebidas")
+def listadebebidas():
+    return render_template('listadebebidas.html')
+
+@app.route("/listadedeseos")
+def listadedeseos():
+    return render_template('listadedeseos.html')
 
 
 
