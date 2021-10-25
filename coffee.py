@@ -18,7 +18,7 @@ def login():
         return render_template('login.html')
 
 @app.route("/registro")
-def registro(): 
+def registro():
     if 'iniciar' in request.args:
        iniciar=str(request.args['iniciar'])
        if(iniciar=='Registrate'):
@@ -77,7 +77,6 @@ def listadedeseos():
 #         return "Error: No ingreso ninguna id."
 
 
-    
 if __name__ == '__main__':
     #DEBUG is SET to TRUE. CHANGE FOR PROD
     app.run(port=5000,debug=True)
