@@ -16,60 +16,25 @@
             <tr>
                 <td>
                     <div>
-                        <table id="tablaBebidas">
-                            <tr>
+                        <table id="tablaBebidas" >
+                            {% for row in rows %}  
+      
+                                <tr> 
+                                    <td class="celdaLogo"> <img id="logoBebida" src="static/img/circulo.jpg" alt="logo bebidas"> </td>
+                                    <td>{{row["id"]}}</td>  
+                                    <td>{{row["name"]}}</td>  
+                                    <td>{{row["tipo_usuario"]}}</td>  
+                                </tr>  
+                            
+                            {% endfor %}
+                            <!-- <tr>
                                 <td class="celdaLogo"> <img id="logoBebida" src="static/img/circulo.jpg" alt="logo bebidas"> </td>
                                 <td>Marcos Antonio Agudelo</td>
                                 <td>
                                     <img id="logoEliminar" src="static/img/basura.png" alt="eliminar" title="eliminar">
                                     <img id="logoEditar" src="static/img/lapiz.png" alt="editar" title="editar">
                                 </td>
-                            </tr>
-
-                            <tr>
-                                <td> <img id="logoBebida" src="static/img/circulo.jpg" alt="logo bebidas"> </td>
-                                <td>Luisa Fernanda Paz</td>
-                                <td>
-                                    <img id="logoEliminar" src="static/img/basura.png" alt="eliminar" title="eliminar">
-                                    <img id="logoEditar" src="static/img/lapiz.png" alt="editar" title="editar">
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td> <img id="logoBebida" src="static/img/circulo.jpg" alt="logo bebidas"> </td>
-                                <td>Luis Alejandro Mejia</td>
-                                <td>
-                                    <img id="logoEliminar" src="static/img/basura.png" alt="eliminar" title="eliminar">
-                                    <img id="logoEditar" src="static/img/lapiz.png" alt="editar" title="editar">
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td> <img id="logoBebida" src="static/img/circulo.jpg" alt="logo bebidas"> </td>
-                                <td>Ana Maria Zuñiga</td>
-                                <td>
-                                    <img id="logoEliminar" src="static/img/basura.png" alt="eliminar" title="eliminar">
-                                    <img id="logoEditar" src="static/img/lapiz.png" alt="editar" title="editar">
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td> <img id="logoBebida" src="static/img/circulo.jpg" alt="logo bebidas"> </td>
-                                <td>Victor Espinoza Apablaza</td>
-                                <td>
-                                    <img id="logoEliminar" src="static/img/basura.png" alt="eliminar" title="eliminar">
-                                    <img id="logoEditar" src="static/img/lapiz.png" alt="editar" title="editar">
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td> <img id="logoBebida" src="static/img/circulo.jpg" alt="logo bebidas"> </td>
-                                <td>Caterine Ibarguen Mena</td>
-                                <td>
-                                    <img id="logoEliminar" src="static/img/basura.png" alt="eliminar" title="eliminar">
-                                    <img id="logoEditar" src="static/img/lapiz.png" alt="editar" title="editar">
-                                </td>
-                            </tr>
+                            </tr> -->
                         </table>
                     </div>
                 </td>

@@ -4,32 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="static\estilosagregarbebidas.css">
+    <link rel="stylesheet" href="static\estiloseliminarbebidas.css">
     <title>Biggby Coffee</title>
 </head>
 <body>
     <div class="maincontainer">
         <div class="headercontainer">
             <div class="tituloagregarbebidas">
-                <p class="txtheaderagregarbebidas">Bebidas</p>
+                <p class="txtheaderborrarcliente">Eliminar</p>
                 <div class="divimgheaderperfil">
                     <img src="static/img/miperfil.png" alt="F por la imagen" class="iconomiperfil">
                 </div>
             </div>
         </div>
-        <div class="divagregaunabebida"><p class="txtagregaunabebida">Agrega una bebida</p></div>
+        <div class="divagregaunabebida"><p class="txtagregaunabebida">Eliminar bebida</p></div>
         <div class="datoscontainer">
-            <form name="formbebidas" action="/guardarbebidas" method="post">
-                <input type="text" name="nombre" placeholder="Nombre" class="inputnombre" required/>
+            <form name="formeliminarbebidas" action="/eliminarbebidas" method="post">
+                <input type="text" name="id" placeholder="Introduce un Id" class="inputnombre" required/>
                 <br>
                 <br>
-                <input type="text" name="url" placeholder="Url de imagen" class="inputurl" required/>
-                <br>
-                <br>
-                <input type="text" name="descripcion" placeholder="Descripcion" class="inputdescripcion" required/>
-                <br>
-                <br>
-                <input type="submit" name="iniciar" value="Inicia Sesion" class="btniniciodesesion">
+                <input type="submit" name="iniciar" value="Eliminar" class="btniniciodesesion">
             </form>
         </div>
     </div>

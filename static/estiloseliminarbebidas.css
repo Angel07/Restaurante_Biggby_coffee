@@ -9,7 +9,7 @@ body{
 .maincontainer{
     background-color: #ffffff;
     width: 400px;
-    height: 400px;
+    height: 300px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 10%;
@@ -21,7 +21,7 @@ body{
 .headercontainer{
     background-color: #424242;
     width: 100%;
-    height: 12%;
+    height: 15%;
     border: solid 0px;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
@@ -37,17 +37,17 @@ body{
     margin-top: -1%;
     margin-left: 2%;
 }
-.txtheaderagregarbebidas{
+.txtheaderborrarcliente{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: large;
 }
 .divagregaunabebida{
-    width: 65%;
+    width: 50%;
     height: 12%;
     /* background-color: red; */
     margin-left: auto;
     margin-right: auto;
-    margin-top: -5%;
+    margin-top: 10%;
 }
 .txtagregaunabebida{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -244,6 +244,7 @@ input::placeholder{
     width: 100%;
 }
 .iconomiperfil{
-    height: 120%;
+    height: 130%;
     width: 90%;
+    margin-top: -15%;
 }

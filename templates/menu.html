@@ -31,11 +31,9 @@
           ¿Buscas algo en especial?
         </button>
         <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-          <li><a class="dropdown-item" href="http://127.0.0.1:5000/bebida">Lassi</a></li>
-          <li><a class="dropdown-item" href="http://127.0.0.1:5000/bebida">Mojito</a></li>
-          <li><a class="dropdown-item" href="http://127.0.0.1:5000/bebida">Blue Sky</a></li>
-          <li><a class="dropdown-item" href="http://127.0.0.1:5000/bebida">Rusty Nail</a></li>
-          <li><a class="dropdown-item" href="http://127.0.0.1:5000/bebida">Mai Thai</a></li>
+            {% for row in rows %}
+                <li><a class="dropdown-item" href="http://127.0.0.1:5000/bebida">{{row["nombre"]}}</a></li>
+            {% endfor %}
         </ul>
     </div>
     <div class="maincontenedor">
