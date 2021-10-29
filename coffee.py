@@ -22,7 +22,6 @@ def login():
 def registro(): 
     return render_template('registro.html')
 
-
 @app.route("/pedidos")
 def pedidos():
     return render_template('pedidos.html')
@@ -240,7 +239,6 @@ def eliminarbebidas():
 #         return "Error: No ingreso ninguna id."
 
 
-    
 if __name__ == '__main__':
     #DEBUG is SET to TRUE. CHANGE FOR PROD
     app.run(port=5000,debug=True)
