@@ -8,10 +8,11 @@
     <title>SuperAdministrador (root)</title>
 </head>
 <body>
+    <div class="home"><a href="http://127.0.0.1:5000/menu"><img src="static/img/home.png" alt="F por la imagen" class="imghome"></a></div>
     <div class="divCentral">
         <table id="tablaExterior">
             <tr>
-                <td  id="cabecero">Usuarios <img id="logoAgregar" src="static/img/usuario.png" alt="agregar usuario" title="agregar"> </td>
+                <td  id="cabecero">Usuarios <a href="http://127.0.0.1:5000/registro"><img id="logoAgregar" src="static/img/usuario.png" alt="agregar usuario" title="agregar"></a> </td>
             </tr>
             <tr>
                 <td>
@@ -23,7 +24,8 @@
                                     <td class="celdaLogo"> <img id="logoBebida" src="static/img/circulo.jpg" alt="logo bebidas"> </td>
                                     <td>{{row["id"]}}</td>  
                                     <td>{{row["name"]}}</td>  
-                                    <td>{{row["tipo_usuario"]}}</td>  
+                                    <td>{{row["tipo_usuario"]}}</td>
+                                    <td><a href="http://127.0.0.1:5000/eliminaru"><img id="logoEliminar" src="static/img/basura.png" alt="eliminar" title="eliminar"></a></td>
                                 </tr>  
                             
                             {% endfor %}

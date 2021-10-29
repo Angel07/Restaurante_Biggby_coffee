@@ -20,6 +20,17 @@ p, td{
     padding: 5px;
 }
 
+.home{
+    height: 4%;
+    width: 4%;
+    margin-top: 0%;
+    margin-right: 15%;
+}
+.imghome{
+    height: 100%;
+    width: 100%;
+}
+
 #tablaExterior{
     width: 500px;
     overflow: hidden;

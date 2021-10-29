@@ -1,6 +1,9 @@
 import sqlite3
-from flask import Flask,redirect,url_for,render_template,request,form
+from flask import Flask,redirect,url_for,render_template,request
 from werkzeug.utils import html
+from werkzeug.wrappers import Request
+from werkzeug.security import generate_password_hash
+import datetime
 
 app=Flask(__name__)
 
@@ -11,12 +14,12 @@ def redireccion():
 
 @app.route('/login',methods=['GET','POST'])
 def login():
-    if 'iniciar' in request.args:
-       iniciar=str(request.args['iniciar'])
-       if(iniciar=='Inicia Sesion'):
-           return redirect('/menu')
-    else:
-        return render_template('login.html')
+    return render_template('login.html')
+
+@app.route("/logear", methods = ["POST","GET"])
+def logear():
+
+    return redirect('/menu')
 
 @app.route("/registro", methods = ["POST","GET"])
 def registro(): 
@@ -59,7 +62,12 @@ def busqueda():
 
 @app.route("/gestionbebidas")
 def gestionbebidas():
-    return render_template('gestionbebidas.html')
+    conv = sqlite3.connect("employee.db")  
+    conv.row_factory = sqlite3.Row  
+    cur = conv.cursor()  
+    cur.execute("select * from Bebidas")  
+    rows = cur.fetchall()  
+    return render_template("gestionbebidas.html",rows = rows) 
 
 @app.route("/miperfil")
 def miperfil():
@@ -115,7 +123,7 @@ def saveDetails():
             name = request.form["name"]  
             contraseña = request.form["contraseña"]  
             address = request.form["address"]
-            tipo_usuario = "administrador"  
+            tipo_usuario = "Usuario"  
             with sqlite3.connect("employee.db") as con:  
                 cur = con.cursor()  
                 cur.execute("INSERT into Employees (name, contraseña, address, tipo_usuario) values (?,?,?,?)",(name,contraseña,address,tipo_usuario))  

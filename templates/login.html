@@ -14,11 +14,11 @@
         </div>
         <div class="diviniciasesion"><p class="txtiniciasesion">Inicia sesion</p></div>
         <div class="forminicio">
-            <form name="login_form" method="post">
-                <input type="text" placeholder="Nombre" class="inputnombre" id="nombre" required/>
+            <form name="login_form" action="/logear" method="post">
+                <input type="text"name="nombre" placeholder="Nombre" class="inputnombre" id="nombre" required/>
                 <br>
                 <br>
-                <input type="password" placeholder="Contraseña" class="inputcontraseña" id="contraseña" required/>
+                <input type="password" name="contraseña" placeholder="Contraseña" class="inputcontraseña" id="contraseña" required/>
                 <br>
                 <br>
                 <input type="submit" name="iniciar" value="Inicia Sesion" class="btniniciodesesion">

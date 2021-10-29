@@ -32,7 +32,7 @@
         </button>
         <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
             {% for row in rows %}
-                <li><a class="dropdown-item" href="http://127.0.0.1:5000/bebida">{{row["nombre"]}}</a></li>
+                <li><a class="dropdown-item" href="http://127.0.0.1:5000/bebida" name="{{row['nombre']}}">{{row["nombre"]}}</a></li>
             {% endfor %}
         </ul>
     </div>
